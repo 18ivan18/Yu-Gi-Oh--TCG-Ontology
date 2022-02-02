@@ -559,8 +559,7 @@ Different individuals: AllDisjoint([yugiOntology.effect7, yugiOntology.effect8, 
 
 
 
-![](./assets/foaf(2).svg)
-![](./assets/foaf(1).svg)
+![](./assets/foaf.svg)
 
 
 # Rules
@@ -573,7 +572,7 @@ rule.set_as_rule(
 # Reasoning
 A separate world is instantiated for isolating ontology before reasoning, then `HermiT reasoner` is executed, obtaining the following results (saved in yugiOntologyInferred.owl):
 ## After running the reasoner
-![](./assets/foaf.svg)
+![](./assets/foaf1.svg)
 
 * Owlready2 * Running HermiT...
     java -Xmx2000M -cp /home/iarabadzhiyski/.local/lib/python3.8/site-packages/owlready2/hermit:/home/iarabadzhiyski/.local/lib/python3.8/site-packages/owlready2/hermit/HermiT.jar org.semanticweb.HermiT.cli.CommandLine -c -O -D -I file:////tmp/tmpt6r22j7u -Y
@@ -686,7 +685,8 @@ WHERE {
     ?player yugiOntology:participates_in ?tournament
 }
 GROUP BY ?tournament
-ORDER BY desc(?p)result =
+ORDER BY desc(?p)
+result =
 [[yugiOntology.Ivan, 6, yugiOntology.SkyStriker, yugiOntology.SofiaRegionals30.11.2022], [yugiOntology.Pesho, 3, yugiOntology.Eldlich, yugiOntology.PlovdivLocals06.02.2022]]
 result before reasoning =
 []
