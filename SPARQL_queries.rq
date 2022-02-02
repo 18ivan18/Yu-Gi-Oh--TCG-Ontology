@@ -1,0 +1,38 @@
+# Counts the classes in the ontology
+SELECT (COUNT(?x) AS ?count)
+WHERE {
+    ?x a owl:Class . 
+}
+
+# Counts the number of cards each deck has
+SELECT ?deck (COUNT(DISTINCT ?card) AS ?count)
+WHERE {
+    ?deck yugiOntology:has_cards ?card .
+}
+GROUP BY ?deck
+
+# Gets the player with most points and his deck
+SELECT ?player ?p ?d
+WHERE {
+    ?player yugiOntology:has_points ?p .
+    ?player yugiOntology:uses ?d
+}
+ORDER BY desc(?p)
+LIMIT 1
+
+# Look at all effect monsters
+SELECT ?card
+WHERE {
+    ?card rdf:type yugiOntology:EffectMonster .
+}
+
+
+# Gets all tournament winners and their decks
+SELECT ?player ?p ?d ?tournament
+WHERE {
+    ?player yugiOntology:has_points ?p .
+    ?player yugiOntology:uses ?d
+    ?player yugiOntology:participates_in ?tournament
+}
+GROUP BY ?tournament
+ORDER BY desc(?p)

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://myonto.com/yugiOntologyInferred.owl"
+         xmlns="http://myonto.com/yugiOntologyInferred.owl#"
+         xmlns:yugi="http://myonto.com/yugiOntology.owl#">
+
+<owl:Ontology rdf:about="http://myonto.com/yugiOntologyInferred.owl"/>
+
+<rdf:Description rdf:about="http://myonto.com/yugiOntology.owl#ExperiencedPlayer">
+  <rdfs:subClassOf rdf:resource="http://myonto.com/yugiOntology.owl#CrowdFavourite"/>
+</rdf:Description>
+
+<yugi:CrowdFavourite rdf:about="http://myonto.com/yugiOntology.owl#Ivan">
+  <yugi:participates_in rdf:resource="http://myonto.com/yugiOntology.owl#SofiaRegionals30.11.2022"/>
+</yugi:CrowdFavourite>
+
+<rdf:Description rdf:about="http://myonto.com/yugiOntology.owl#Kostadin">
+  <yugi:participates_in rdf:resource="http://myonto.com/yugiOntology.owl#SofiaRegionals30.11.2022"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://myonto.com/yugiOntology.owl#Ventseslav">
+  <yugi:participates_in rdf:resource="http://myonto.com/yugiOntology.owl#SofiaRegionals30.11.2022"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://myonto.com/yugiOntology.owl#Ivaylo">
+  <yugi:participates_in rdf:resource="http://myonto.com/yugiOntology.owl#SofiaRegionals30.11.2022"/>
+</rdf:Description>
+
+<yugi:Draw rdf:about="http://myonto.com/yugiOntology.owl#match4"/>
+
+<yugi:EffectMonster rdf:about="http://myonto.com/yugiOntology.owl#SkyStrikerAce-Raye"/>
+
+<yugi:EffectMonster rdf:about="http://myonto.com/yugiOntology.owl#AshBlossom&amp;JoyousSpring"/>
+
+<yugi:XyzMonster rdf:about="http://myonto.com/yugiOntology.owl#Odd-EyesRagingDragon">
+  <rdf:type rdf:resource="http://myonto.com/yugiOntology.owl#PendulumMonster"/>
+</yugi:XyzMonster>
+
+<yugi:EffectMonster rdf:about="http://myonto.com/yugiOntology.owl#Number39:Utopia">
+  <rdf:type rdf:resource="http://myonto.com/yugiOntology.owl#XyzMonster"/>
+</yugi:EffectMonster>
+
+<yugi:PendulumMonster rdf:about="http://myonto.com/yugiOntology.owl#Odd-EyesPendulumDragon"/>
+
+<yugi:NonEffectMonster rdf:about="http://myonto.com/yugiOntology.owl#DarkMagician"/>
+
+<yugi:EffectMonster rdf:about="http://myonto.com/yugiOntology.owl#CrystronHalqifibrax">
+  <rdf:type rdf:resource="http://myonto.com/yugiOntology.owl#LinkMonster"/>
+</yugi:EffectMonster>
+
+<rdf:Description rdf:about="http://myonto.com/yugiOntology.owl#Pesho">
+  <yugi:participates_in rdf:resource="http://myonto.com/yugiOntology.owl#PlovdivLocals06.02.2022"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://myonto.com/yugiOntology.owl#Gosho">
+  <yugi:participates_in rdf:resource="http://myonto.com/yugiOntology.owl#PlovdivLocals06.02.2022"/>
+</rdf:Description>
+
+
+</rdf:RDF>
